@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Musical</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Tilt+Neon&display=swap"
+    rel="stylesheet">
+  <link href="musicstyle.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon"
+    href="symbol.png"
+    type="image/png">
+</head>
+
+<body>
+
+  <!--LEFT PANEL-->
+
+  <div class="panel-container">
+    <div class="left-panel panel">
+
+      <div class="close-con">
+        <i class="fa-solid fa-xmark close" style="color: #ffffff;"></i>
+      </div>
+
+      <div class="first-box box">
+        <ul type="none" class="main-list">
+          <li><a href=""><img
+                src="musicalogo.png" alt="logo"
+                class="logo"></a></li>
+          <li><p>Discover Your Favourite Songs From Your Favourite Animated Movies!</p></li>
+        </ul>
+      </div>
+
+      <div class="second-box box">
+        <div class="library">
+
+          <div class="library-head">
+            <h2><i class="fa-solid fa-layer-group"></i>My Playlist</h2>
+            <div class="plus-container" data-tooltip="Add Songs To Playlist">
+            <i class="fa-solid fa-plus plus"></i>
+          </div>
+          </div>
+
+          <div class="empty-msg">
+            <p>Create Your Own Playlist!</p>
+          </div> 
+
+          <div class="library-rows"></div>
+        </div>
+
+        
+        <div class="ok-con">
+        <button class="btn ok-btn">Ok</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!--RIGHT PANEL-->
+
+    <div class="right-panel panel box">
+
+      <nav>
+        <div class="bars-con">
+          <i class="fa-solid fa-bars bars" style="color: #ffffff;"></i>
+        </div>
+       </nav>
+
+      <div class="musical-playlists">
+        <div class="sec-nav">
+          <h1>Musical Playlists</h1>
+        </div>
+
+        <div class="album-cards">
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="letit.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>Let It Go (Frozen)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn" data-index="0"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="buildsnowman.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>Do You Wanna Build A Snowman (Frozen)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn" data-index="1"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="firsttime.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>For The First Time In Forever (Frozen)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn" data-index="2"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="found.jpg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>All Is Found (Frozen 2)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="3"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="unknown.jpg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>In To The Unknown (Frozen 2)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="4"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="showyourself.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>Show Yourself (Frozen 2)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn" data-index="5"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="some.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>Some Things Never Change (Frozen 2)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="6"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="next.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>The Next Right Thing (Frozen 2)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="7"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="woods.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>Lost In The Woods (Frozen 2)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="8"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="family.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>The Family Madrigal (Encanto)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="9"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="waiting.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>Waiting On A Miracle (Encanto)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="10"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="surface.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>Surface Pressure (Encanto)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="11"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="else.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>What Else Can I Do (Encanto)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="12"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="bruno.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>We Don't Talk About Bruno (Encanto)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn" data-index="13"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="begin.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>When Will My Life Begin (Tangled)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="14"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="light.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>I See The Light (Tangled)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn" data-index="15"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="imm.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>Immortals (Big Hero 6)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="16"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="poco.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>Un Poco Loco (Coco)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="17"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="remember.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>Remember Me (Coco)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="18"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="lalar.jpeg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>La Llorona (Coco)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="19"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="selectbtn"></div>
+              <img
+                src="proud.jpg"
+                alt="Dinner Jazz">
+              <div class="text">
+                <h5>My Proud Corazon (Coco)</h5>
+              </div>
+              <div class="play-btn-container">
+                <i class="fa-solid fa-play play-btn"  data-index="20"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="playbar">
+
+          <div class="playbar-data">
+            <div class="song-info">
+             
+            </div>
+
+            <div class="song-duration">
+             
+            </div>
+
+            <div class="volume">
+              <i class="fa-solid fa-volume-high vol-icon" style="color: #ffffff;"></i>
+              <div class="range">
+                <input type="range" name="vol-slider" class="vol-slider">
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="icons">
+            <i class="fa-solid fa-backward-step" id="previous" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-play" id="play" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-forward-step" id="next" style="color: #ffffff;"></i>
+          </div>
+
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <script src="musicalscript.js"></script>
+</body>
+
+</html>
