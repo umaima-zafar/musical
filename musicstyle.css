@@ -45,6 +45,9 @@ ul {
   font-family: roboto;
   position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .close-con {
@@ -479,27 +482,40 @@ nav {
   width: 70px;
 }
 
-
-
 /*RESPONSIVE*/
 
 @media (max-width: 1200px) {
+
+  .panel-container{
+    padding: 0;
+    margin: 0;
+  }
+
   .left-panel {
     left: -100%;
     width: 60%;
     position: absolute;
     transition: left 0.5s ease-in-out;
     z-index: 1;
+    border-radius: 0;
+    gap: 10px;
   }
 
-  .security-items {
-    display: none;
+  .box{
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .second-box{
+  height: 66%;
   }
 
   .right-panel {
     width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
+    border-radius: 0;
   }
 
   .bars-con {
@@ -510,7 +526,7 @@ nav {
     display: block;
   }
 
-  .spotify-playlists {
+  .musical-playlists {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -518,31 +534,27 @@ nav {
     height: 80%;
   }
 
-  .spotify-playlists h1 {
-    margin-top: 23px;
-  }
-
   .album-cards {
-    flex-wrap: wrap;
-    height: 90%;
-    margin-top: 6px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+    gap: 0;
   }
 
   .card-container {
     margin-top: 0px;
-    width: 100%;
-  }
-
-  .card-container:hover {
-    background-color: none;
+    width: 75%;
   }
 
   .card {
-    width: 100%;
+    width: 90%;
   }
 
   .card img {
     height: 70%;
+    width: 80%;
   }
 
   .play-btn-container {
@@ -569,6 +581,4 @@ nav {
   .seekbar {
     margin-bottom: 6px;
   }
-
-
 }
