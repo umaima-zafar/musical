@@ -152,6 +152,24 @@ volSlider.addEventListener("change", (e) => {
     updateVolumeIcon();
 });
 
+// Sidebar toggle
+const leftPanel = document.querySelector(".left-panel");
+const bars = document.querySelector(".bars");
+const closeBtn = document.querySelector(".close");
+
+function openLeftPanel() {
+    leftPanel.style.left = "0";
+    leftPanel.style.backgroundColor = "lavender";
+    leftPanel.style.width = "100%";
+}
+
+function closeLeftPanel() {
+    leftPanel.style.left = "-100%";
+}
+
+bars.addEventListener("click", openLeftPanel);
+closeBtn.addEventListener("click", closeLeftPanel);
+
 const libraryRows = document.querySelector(".library-rows");
 const emptyMsg = document.querySelector(".empty-msg");
 const plusSign = document.querySelector(".plus");
@@ -176,6 +194,10 @@ plusSign.addEventListener("click", () => {
     okBtn.style.display = "block";
     libraryRows.style.display = "block";
     emptyMsg.style.display = "none";
+
+    if (window.matchMedia("(max-width: 1200px)").matches){
+        closeLeftPanel();
+    }
 });
 
 okBtn.addEventListener("click", () => {
@@ -293,23 +315,3 @@ document.querySelector(".library-rows").addEventListener('click', function (even
         }
     }
 });
-
-// Sidebar toggle
-const leftPanel = document.querySelector(".left-panel");
-const bars = document.querySelector(".bars");
-const closeBtn = document.querySelector(".close");
-
-function openLeftPanel() {
-    leftPanel.style.left = "0";
-    leftPanel.style.backgroundColor = "lavender";
-    leftPanel.style.width = "80%";
-}
-
-function closeLeftPanel() {
-    leftPanel.style.left = "-100%";
-    security.style.display = "none";
-}
-
-bars.addEventListener("click", openLeftPanel);
-closeBtn.addEventListener("click", closeLeftPanel);
-
